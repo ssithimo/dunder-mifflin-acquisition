@@ -19,15 +19,35 @@ Each section of the notebook includes:
 
 ### 🚀 How to Use
 If you're running the notebook in Google Colab or Jupyter:
-1. Install `ipython-sql` if needed
-2. Use your PostgreSQL connection string to activate `%sql` magic
-3. Follow along or reuse queries for your own analysis
+1. Clone the repo:
+   ```
+   git clone https://github.com/ssithimo/dunder-mifflin-acquisition.git
+   cd dunder-mifflin-acquisition
+   ```
+2. Create and configure your dunder.env file
+Create a dunder.env file in the root of the repo with your PostgreSQL connection details:
+```
+DB_USER=your_username
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=your_database
+```
+4. Open dunder_acquisition_analysis.ipynb in Jupyter or VS Code.
+The database credentials will be pulled from your dunder.env file and used to connect with PostgreSQL via SQLAlchemy and Pandas.
 
 Alternatively, view the notebook as a fully annotated portfolio project on [nbviewer](#) or open it in Colab.
 
 ### 🧠 Tools & Technologies
-- SQL (PostgreSQL)
-- Jupyter / Google Colab
-- Markdown for storytelling
+- Exploratory Data Analysis (EDA)
+- Joins (INNER, LEFT, RIGHT, FULL)
+- Grouping and Aggregation (GROUP BY)
+- Window Functions (RANK, PARTITION BY)
+- Common Table Expressions (CTEs) with WITH
+- Subqueries
+- Filtering with WHERE, CASE, HAVING
+- Environment-based database access for secure credential management
+- Business insights & operational recommendations from data
+- Visual storytelling (bar charts, line charts, pie charts)
 
 ---
