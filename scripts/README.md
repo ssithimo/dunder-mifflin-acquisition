@@ -1,1 +1,1 @@
-This folder contains sql scripts for the Dunder Mifflin Acquisition Analysis project
+These are the sql scripts for the Dunder Mifflin Acquisition Analysis project
